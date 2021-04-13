@@ -2,7 +2,8 @@ import "./Jungle.css";
 function Jungle(props){
     return (
         <div className="serpent">
-            <p className="lion">{props.animal}</p>
+            <img src={props.image} className="lion" alt= "lion" />
+            <p className="araignée">{props.animal}</p>
         </div>
  );
 }

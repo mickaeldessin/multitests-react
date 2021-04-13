@@ -3,24 +3,24 @@ import "./MyJungle.css";
 const animalsContact = [
     {
         animal : "mika le koala",
-        image : "",
+        image : "pictures/koala.jpg",
         color : "gris"
         
     },
     {
         animal : "sophie la grenouille",
-        image : "",
+        image : "pictures/grenouille.jpg",
         color : "vert"
     },
     {
         animal : "camille l'écureuil",
-        image :"",
+        image :"pictures/ecureuil.jpg",
         color :"rouge"
     },  
 
     {
         animal :"raphael le dindon",
-        image :"",
+        image :"pictures/dindon.jpg",
         color :"bleu"      
     
     }
@@ -29,13 +29,13 @@ const animalsContact = [
 
 export default function MyJungle(){
     return(
-        animalsContact.map(animal=>{
+        animalsContact.map(animalContact=>{
             return(
             <div className= "bears">
                 <Jungle
-                image={animal.image}
-                animal={animal.animal}
-                color={animal.color}
+                image={animalContact.image}
+                animal={animalContact.animal}
+                color={animalContact.color}
                 />
             </div>)
 
