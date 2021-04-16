@@ -6,7 +6,7 @@ export default function ChuckNorris() {
 
   useEffect(() => {
     axios.get("https://api.chucknorris.io/jokes/random").then(({ data }) => {
-      console.log(data);
+      // console.log(data);
       setChuckNorris(data);
     });
   }, []);
@@ -14,6 +14,7 @@ export default function ChuckNorris() {
   return (
     <div>
       <h2>{chuckNorris.value}</h2>
+      <img src = {chuckNorris.icon_url} alt ="img"/>
     </div>
   );
 }

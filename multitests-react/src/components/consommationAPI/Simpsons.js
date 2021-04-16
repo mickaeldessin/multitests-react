@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Simpson from "./Simpson";
+
 export default function Simpsons() {
   const [simpsons, setSimpsons] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://simpsons-quotes-api.herokuapp.com/quotes?count=10")
+      .get("https://simpsons-quotes-api.herokuapp.com/quotes?count=2")
       .then(({ data }) => {
-        console.log(data);
+        // console.log(data);
         setSimpsons(data);
       });
   }, []);
